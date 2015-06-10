@@ -1,6 +1,7 @@
 # Reproducible Research: Peer Assessment 1
 
-
+Please note, if you want to see the images embedded in the narrative, view `PA_template.md` instead of
+`PA_template.Rmd`
 ### Loading and preprocessing the data
 *Note: You'll need to have activity.zip in the working directory.*
 
@@ -121,7 +122,7 @@ print(xtable(df, caption="Comparison of dropping NAs vs imputing missing values"
 ```
 
 <!-- html table generated in R 3.1.2 by xtable 1.7-4 package -->
-<!-- Wed Jun 10 16:19:00 2015 -->
+<!-- Wed Jun 10 16:24:46 2015 -->
 <table border=1>
 <caption align="bottom"> Comparison of dropping NAs vs imputing missing values </caption>
 <tr> <th>  </th> <th> na_dropped </th> <th> imputes </th>  </tr>

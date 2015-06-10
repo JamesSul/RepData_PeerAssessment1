@@ -64,13 +64,10 @@ img {
 </div>
 
 
-<div id="loading-and-preprocessing-the-data" class="section level3">
-<h3>Loading and preprocessing the data</h3>
-<p><em>Note: You’ll need to have activity.zip in the working directory.</em></p>
+<p>Please note, if you want to see the images embedded in the narrative, view <code>PA_template.md</code> instead of <code>PA_template.Rmd</code> ### Loading and preprocessing the data <em>Note: You’ll need to have activity.zip in the working directory.</em></p>
 <pre class="r"><code>unzip(&quot;activity.zip&quot;)
 activity &lt;- read.csv(&quot;activity.csv&quot;)
 activity$date &lt;- as.Date(activity$date)</code></pre>
-</div>
 <div id="what-is-mean-total-number-of-steps-taken-per-day" class="section level3">
 <h3>What is mean total number of steps taken per day?</h3>
 <p>Histogram of total number of steps taken each day:<br /><em>note: I used the <a href="http://stats.stackexchange.com/questions/798/calculating-optimal-number-of-bins-in-a-histogram-for-n-where-n-ranges-from-30">Freedman-Diaconis rule</a> for number of bins as the default Sturges method didn’t seem to adequately show the distribution.</em></p>
@@ -124,7 +121,7 @@ rownames(df) &lt;- c('mean', 'median')
 print(xtable(df, caption=&quot;Comparison of dropping NAs vs imputing missing values&quot;,
              floating=FALSE), type=&quot;html&quot;)</code></pre>
 <!-- html table generated in R 3.1.2 by xtable 1.7-4 package -->
-<!-- Wed Jun 10 16:19:00 2015 -->
+<!-- Wed Jun 10 16:24:46 2015 -->
 <table border="1">
 <caption align="bottom">
 Comparison of dropping NAs vs imputing missing values
